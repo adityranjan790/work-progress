@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.progress-container {
+    margin-bottom: 20px;
+}
+
+.step {
+    text-align: center;
+    position: relative;
+    flex: 1;
+}
+
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -50%;
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+.step.completed:not(:last-child)::after,
+.step.in-progress:not(:last-child)::after {
+    background-color: #4CAF50;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd;
+    line-height: 40px;
+    margin: 0 auto 10px;
+}
+
+.step.completed .circle {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.step.in-progress .circle {
+    background-color: #00bcd4;
+    color: white;
+}
+
+.step.pending .circle {
+    background-color: #bbb;
+}
+
+.label {
+    font-size: 14px;
+}
+
+.label span {
+    color: #888;
+    font-size: 12px;
+}
+
+.separator {
+    border: 1px solid #00bcd4;
+    margin: 20px 0;
+}
+
+/* Course Description */
+.course-description {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.course-description img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.course-text h2 {
+    margin: 0 0 10px;
+}
+
+.course-text p {
+    margin: 0;
+    color: #555;
+}
+
+/* Chatbox */
+.chatbox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.received {
+    background-color: #e5e5e5;
+    text-align: left;
+}
+
+.sent {
+    background-color: #4CAF50;
+    color: white;
+    text-align: right;
+}
+
+input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
